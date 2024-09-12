@@ -1,3 +1,16 @@
 h1{
     color: red;
 }
+li:nth-child(2){
+    color: red ;
+    size: 200 px;
+}
+/* li:nth-child(even){
+    background-color: red ;
+} */
+li:nth-child(odd){
+    background-color:yellow  ;
+}
+ul{
+    list-style-type: lower-latin;
+  }
