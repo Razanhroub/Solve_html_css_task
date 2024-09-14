@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+
+<body>
+  <!-- basic form -->
+  <!-- <form> create an HTML form for user input -->
+  <!-- `action` attribute specifies where to send the form data when the form is submitted-->
+  <!-- `method` atrribute specifies the HTTP method to use when sending the form data -->
+  <!-- `for` attribute to assign and connect the label with the input -->
+
+  <h1>basic form example</h1>
+  <form action="/submit" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" name="fname" id="fname" required minlength="2" maxlength="15">
+
+    <br><br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" name="lname" id="lname" required>
+
+    <br>
+    <label for="mob">Mobile Number</label>
+    <input type="tel" name="mob" id="mob" required>
+    <input type="submit" value="submit">
+
+  </form>
+
+  <!-- Form with radio buttons and checkboxes -->
+
+  <form action="/submit" method="post">
+
+    <!-- radio buttons -->
+    <p>Select your favorite Meal</p>
+    <input type="radio" name="meal" id="mansaf" value="Mansaf" checked>
+    <label for="mansaf">Mansaf</label><br>
+
+    <input type="radio" name="meal" id="pasta" value="Pasta">
+    <label for="pasta">Pasta</label><br>
+
+    <input type="radio" name="meal" id="bryani" value="Bryani">
+    <label for="bryani">Bryani</label><br>
+
+    <!-- checboxes -->
+    <p>Select your drink:</p>
+    <input type="checkbox" name="drinks" id="blackMatrix" value="pepsi">
+    <label for="blackMatrix">Matrix Pepsi</label><br>
+
+    <input type="checkbox" name="drinks" id="whiteMatrix" value="7up">
+    <label for="whiteMatrix">Matrix 7up</label><br>
+
+    <input type="checkbox" name="drinks" id="orangeMatrix" value="Fanta">
+    <label for="orangeMatrix">Matrix Miranda</label>
+
+    <br><br>
+    <input type="submit" value="submit">
+  </form>
+
+  <!-- ## FORM WITH DROPDOWN AND TEXTAREA -->
+  <!-- The <select> tag is used to create a dropdown list. -->
+  <!-- The <textarea> tag is used to create a multi-line text input. -->
+  <h1>Form with Dropdown and Textarea</h1>
+  <form action="/submit" method="post">
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+      <option value="jordan">Jordan</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
