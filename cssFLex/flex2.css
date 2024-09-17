@@ -1,0 +1,15 @@
+.parent{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    border: 2px solid black;
+
+}
+.box {
+    display: flex;
+    margin: 20px;
+    
+}
+#cat{
+    justify-self: flex-start;
+}

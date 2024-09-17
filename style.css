@@ -1,16 +1,14 @@
-h1{
-    color: red;
+body{
+   display: flex;
+   border: 8px solid black;
+   min-height: 800px;
+   flex-direction: column-reverse;
+
 }
-li:nth-child(2){
-    color: red ;
-    size: 200 px;
+
+.box{
+   height: 100px;
+   width: 100px;
+   background-color: aqua;
+   font-size: 40pt;
 }
-/* li:nth-child(even){
-    background-color: red ;
-} */
-li:nth-child(odd){
-    background-color:yellow  ;
-}
-ul{
-    list-style-type: lower-latin;
-  }

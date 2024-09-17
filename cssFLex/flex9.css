@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    border: 2px solid  orange;
+    flex-wrap: wrap;
+    min-height: 250px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    }
+.box{
+    width:400px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}

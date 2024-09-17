@@ -1,0 +1,7 @@
+body{
+    display: flex;
+}
+.box{
+    color: white;
+    font-size: 30px;
+}

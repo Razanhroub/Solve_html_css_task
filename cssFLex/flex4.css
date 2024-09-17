@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: rgb(149, 149, 232) ;
+    color: white;
+    width: 200px;
+    height:250px;
+    border: 5px solid rgb(10, 124, 190);
+    border-radius: 50px;
+    padding: 20px;
+}
