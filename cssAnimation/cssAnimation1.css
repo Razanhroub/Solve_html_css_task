@@ -1,0 +1,12 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    
+}
+
+.box:hover{
+    
+    transition-delay: 4s;
+    background-color: yellow;
+}
