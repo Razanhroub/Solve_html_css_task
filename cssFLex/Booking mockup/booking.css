@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: "Inria Sans", sans-serif;
+}
+h{
+    font-family: "Inria Sans", sans-serif;
+}
+.nav {
+    background-color: #0047AB;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column; /* Add this to stack .topnav and .subnav vertically */
+    padding-top: 5vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between; /* Maintain space between left and right sections */
+    align-items: center; /* Center items vertically */
+}
+
+.topnav ul {
+    display: flex;
+    gap: 2vh;
+    list-style: none;
+    color: white;
+    align-items: center; 
+}
+
+.subnav {
+    background-color: #005bbb; /* You can change this to whatever suits your design */
+    padding: 10px;
+    margin-top: 10px; /* Add some margin to create space between .topnav and .subnav */
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+.middlenav{
+    padding-top: 2vh;
+   
+}
+.middlenav ul {
+    display: flex;
+    gap: 2vh;
+    list-style: none;
+    color: white;
+    align-items: center; 
+}
+.bottomnav {
+    padding-top:12vh ;
+}
+
+
+body {
+    display: grid;
+    grid-template-rows: 50vh 1fr 50vh;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-template-areas:
+        "nav"
+        "main"
+        "foot";
+}
+
+.main {
+    grid-area: main;
+   
+}
+
+.footer {
+    grid-area: foot;
+   
+}

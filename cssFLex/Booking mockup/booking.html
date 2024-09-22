@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./booking.css">
+    <link rel="icon" href="./icon.png" type="image/icon-type">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="topnav">
+            <div class="left">
+                <ul>
+                    <li style="margin-right: auto;">
+                        <a href="#">
+                            <p style="font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Booking.com</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="space"></li>
+                    <li><a href="#">JOD</a></li>
+                    <li><a href="#"><img src="./flag_america.png" alt="flag" style="height:5vh; width: 5vh; border-radius: 50%;"></a></li>
+                    <li><a href="#"><img src="./question.png" alt="flag" style="height:3vh; width: 3vh; border-radius: 50%;"></a></li>
+                    <li><p>List your property</p></li>
+                    <li><button style="width: 80px; height: 40px;"><p style="color: #0047AB;">Register</p></button></li>
+                    <li><button style="width: 80px; height: 40px;"><p style="color: #0047AB;">Sign in</p></button></li>
+                </ul>
+            </div>
+        </div>
+      
+        <div class="middlenav" >
+            <ul>
+                <li style="display: flex; align-items: center;">
+                    <box-icon name='bed' color="white" size="s"></box-icon>
+                    <p style="margin-left: 8px;">stays</p>
+                </li>
+                <li style="display: flex; align-items: center;"></li>
+                    <box-icon type='solid' name='plane-alt' color="white" size="s"></box-icon>
+                    <p style="margin-left: 8px;">flights</p>
+                </li>
+                <li style="display: flex; align-items: center;"></li>
+                    <box-icon type='solid' name='car-garage'color="white" size="s"></box-icon>
+                    <p style="margin-left: 8px;">car rentals</p>
+                </li>
+                <li style="display: flex; align-items: center;"></li>
+                <box-icon name='dice-5'color="white" size="s"></box-icon>
+                <p style="margin-left: 8px;">attractions</p>
+                </li>
+                <li style="display: flex; align-items: center;"></li>
+                <box-icon type='solid' name='taxi' color="white" size="s"></box-icon>
+                <p style="margin-left: 8px;">airport taxiss</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottomnav "  >
+            <p style="font-size: 4rem; color: white; line-height: 2rem;" ><strong>Find your next stay</strong></p><br>
+            <p  style="font-size: 2rem; color: white;">Search deals on hotels , homes, and much more....</p> 
+        </div>
+        <div>
+            <form action="#" style="border:0.2rem solid orange; height: 5rem;padding: 5px; display: flex; justify-content: space-evenly ; background-color: white;">
+                <select name="place" id="place" style="width: 33%; height: 4rem">
+                    <option value="#" disabled selected>Where are you going</option>
+                    <option value="Deadsea">Deadsea</option>
+                    <option value="Aqaba">Aqaba</option>
+                </select>
+                <input type="date" name="date" id="date" style="width: 33%; height: 4rem">
+                <select name="people" id="people" style="width: 33%;  height: 4rem">
+                    <option value="#" disabled selected>2 Adults 0 children 1 room</option>
+                    <option value="baby">baby</option>
+                    <option value="couple">couple</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+    <div class="main"></div>
+    <div class="footer"></div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
